@@ -53,10 +53,10 @@
             }
 
             var http = new XMLHttpRequest();
-            var url = '/TiendaVirtualSB/consultarUsuario';
-            var params = "usuario=" + usuario + "&contraseña=" + contraseña;
+            var url = '/usuarios/login';
+            var params = JSON.stringify({ usuario: usuario, contraseña: contraseña });
             http.open('POST', url, true);
-            http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            http.setRequestHeader('Content-type', 'application/json');
             http.onreadystatechange = function() {
                 if (http.readyState == 4 && http.status == 200) {
                     var respuesta = JSON.parse(http.responseText);
