@@ -67,7 +67,7 @@
                 var precioVenta = document.getElementById("txtPrecioVenta").value.trim();
 
                 var http = new XMLHttpRequest();
-                var url = '/productos/guardar'; // Actualiza 'TuProyecto' con tu contexto de proyecto
+                var url = '/api/productos/guardar'; // Actualiza 'TuProyecto' con tu contexto de proyecto
                 var params = JSON.stringify({
                     "ivaCompra": parseFloat(ivaCompra),
                     "nombre": nombreProducto,

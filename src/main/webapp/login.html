@@ -53,7 +53,7 @@
             }
 
             var http = new XMLHttpRequest();
-            var url = '/usuarios/login';
+            var url = '/api/usuarios/login';
             var params = JSON.stringify({ usuario: usuario, contraseña: contraseña });
             http.open('POST', url, true);
             http.setRequestHeader('Content-type', 'application/json');

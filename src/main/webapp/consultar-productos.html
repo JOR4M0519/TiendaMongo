@@ -35,7 +35,7 @@
                 idProducto = "null";
             }
             var http = new XMLHttpRequest();
-            var url = '/productos/listar';
+            var url = '/api/productos/listar';
             var params = "idProducto=" + idProducto;
             http.open('GET', url, true);
             http.onreadystatechange = function() {//Call a function when the state changes.

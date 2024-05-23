@@ -33,7 +33,7 @@
             var nit = document.getElementById("txtNIT").value.trim() || "null";
 
             var http = new XMLHttpRequest();
-            var url = '/clientes/consultar';
+            var url = '/api/clientes/consultar';
             var params = "nit=" + nit;
             http.open('GET', url + "?" + params, true);
             http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
